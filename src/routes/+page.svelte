@@ -131,14 +131,15 @@
 
 				<div class="tool-layout">
 					<div class="tool-copy">
-						<h2>Calm Now</h2>
+						<h2>InnerAnchor</h2>
 
 						<p>
-							A focused emotional regulation experience designed for moments of panic, spiraling,
-							overwhelm, rejection sensitivity, or attachment activation.
+							A grounded emotional regulation experience designed to help people orient, regulate,
+							and reconnect with themselves during moments of overwhelm, spiraling, rejection
+							sensitivity, or attachment activation.
 						</p>
 
-						<a href="/calm-now" class="ghost-button primary"> Open The Tool </a>
+						<a href="/inner-anchor" class="ghost-button primary"> Open The Tool </a>
 					</div>
 
 					<div class="tool-preview" aria-hidden="true">
@@ -153,3 +154,70 @@
 		</div>
 	</section>
 </main>
+<!-- FOOTER -->
+
+<footer class="site-footer">
+	<div class="footer-inner">
+		<div class="footer-brand">
+			<p class="footer-eyebrow">
+				<span></span>
+				The Validation Movement
+			</p>
+
+			<h2>Understanding before judgment.</h2>
+
+			<p class="footer-description">
+				A compassion-centered platform dedicated to reducing stigma surrounding Borderline
+				Personality Disorder through emotionally intelligent design, supportive tools, education,
+				and lived experience.
+			</p>
+		</div>
+
+		<div class="footer-links-grid">
+			<div class="footer-column">
+				<h3>Explore</h3>
+
+				<nav>
+					<a href="/">Home</a>
+					<a href="/inner-anchor">InnerAnchor</a>
+					<a href="#understand-bpd">Understanding BPD</a>
+					<a href="#for-bpd">For People With BPD</a>
+				</nav>
+			</div>
+
+			<div class="footer-column">
+				<h3>Principles</h3>
+
+				<nav>
+					<a href="/">Validation over shame</a>
+					<a href="/">Regulation before explanation</a>
+					<a href="/">Compassion before judgment</a>
+				</nav>
+			</div>
+
+			<div class="footer-column">
+				<h3>Connect</h3>
+
+				<nav>
+					<a
+						href="https://github.com/jopearsondesigner/the-validation-movement"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						GitHub
+					</a>
+
+					<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+						LinkedIn
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>© 2026 The Validation Movement</p>
+
+		<p>Designed & developed by Jo Pearson</p>
+	</div>
+</footer>
