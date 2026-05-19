@@ -52,9 +52,11 @@
 
 	<meta property="og:type" content="website" />
 
+	<meta property="og:url" content="https://YOUR-REAL-NETLIFY-URL.netlify.app/" />
+
 	<meta
 		property="og:image"
-		content="https://YOUR-NETLIFY-URL.netlify.app/og-validation-movement.jpg"
+		content="https://YOUR-REAL-NETLIFY-URL.netlify.app/og-validation-movement.jpg"
 	/>
 
 	<meta property="og:image:width" content="1200" />
@@ -67,7 +69,14 @@
 
 	<meta
 		name="twitter:image"
-		content="https://YOUR-NETLIFY-URL.netlify.app/og-validation-movement.jpg"
+		content="https://YOUR-REAL-NETLIFY-URL.netlify.app/og-validation-movement.jpg"
+	/>
+
+	<meta name="twitter:title" content="The Validation Movement" />
+
+	<meta
+		name="twitter:description"
+		content="A compassion-centered platform dedicated to reducing stigma surrounding Borderline Personality Disorder through emotionally intelligent design and emotional safety."
 	/>
 </svelte:head>
 
