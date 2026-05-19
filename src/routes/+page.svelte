@@ -4,6 +4,12 @@
 	import tvmLogo from '$lib/assets/logos/tvm-logo-primary.svg';
 	import heroImage from '$lib/assets/images/tvm-hero-lilith-not-alone.webp';
 
+	import crescentMoon from '$lib/assets/graphics/celestial/crescent-moon-painterly.webp';
+	import goldDust from '$lib/assets/graphics/particles/gold-dust-cluster-01.webp';
+	import constellation from '$lib/assets/graphics/celestial/constellation-fragment-01.webp';
+	import lanternGlow from '$lib/assets/graphics/celestial/lantern-glow.webp';
+	import dividerFlourish from '$lib/assets/graphics/dividers/divider-flourish-gold.webp';
+
 	const beliefs = [
 		'Validation is not agreement.',
 		'Intensity is not manipulation.',
@@ -79,6 +85,8 @@
 	</section>
 
 	<section class="cream-section">
+		<img src={goldDust} alt="" class="cream-entry-dust" aria-hidden="true" />
+
 		<div class="page-shell">
 			<section class="belief-grid" aria-label="Core validation beliefs">
 				{#each beliefs as belief}
@@ -98,6 +106,8 @@
 					<h2>People are not asking to be dramatic.</h2>
 
 					<div class="editorial-copy">
+						<img src={constellation} alt="" class="editorial-graphic" aria-hidden="true" />
+
 						<p>
 							They are trying to communicate something real, frightening, and overwhelming — often
 							without the regulation, safety, or emotional language they needed growing up.
@@ -114,6 +124,10 @@
 			<section class="principles-grid" aria-label="Validation principles">
 				{#each principles as principle}
 					<article class="principle-card">
+						{#if principle.number === '02'}
+							<img src={crescentMoon} alt="" class="principle-moon" aria-hidden="true" />
+						{/if}
+
 						<span class="principle-number">{principle.number}</span>
 
 						<h3>{principle.title}</h3>
@@ -144,6 +158,7 @@
 
 					<div class="tool-preview" aria-hidden="true">
 						<div class="preview-screen">
+							<img src={lanternGlow} alt="" class="preview-atmosphere" aria-hidden="true" />
 							<div class="preview-pulse"></div>
 
 							<p class="preview-text">A softer place to land.</p>
@@ -154,11 +169,17 @@
 		</div>
 	</section>
 </main>
-<!-- FOOTER -->
 
 <footer class="site-footer">
 	<div class="footer-inner">
 		<div class="footer-brand">
+			<img
+				src={dividerFlourish}
+				alt=""
+				class="footer-flourish footer-flourish-behind"
+				aria-hidden="true"
+			/>
+
 			<p class="footer-eyebrow">
 				<span></span>
 				The Validation Movement
