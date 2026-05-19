@@ -1,5 +1,32 @@
+<!-- src/routes/+page.svelte -->
+
 <script lang="ts">
 	import tvmLogo from '$lib/assets/logos/tvm-logo-primary.svg';
+	import heroImage from '$lib/assets/images/tvm-hero-lilith-not-alone.webp';
+
+	const beliefs = [
+		'Validation is not agreement.',
+		'Intensity is not manipulation.',
+		'Pain is not attention-seeking.'
+	];
+
+	const principles = [
+		{
+			number: '01',
+			title: 'Believe the intensity.',
+			text: 'The emotion may seem impossible from the outside. That does not mean it is exaggerated.'
+		},
+		{
+			number: '02',
+			title: 'Reduce shame.',
+			text: 'Validation begins by making emotional experience understandable instead of treating it like a character flaw.'
+		},
+		{
+			number: '03',
+			title: 'Offer regulation.',
+			text: 'Support should lower cognitive load and help someone return to safety before asking them to explain themselves.'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -10,142 +37,119 @@
 	/>
 </svelte:head>
 
-<main class="page-shell">
-	<header class="site-header">
-		<img src={tvmLogo} alt="The Validation Movement" class="site-logo" />
-	</header>
+<main>
+	<section class="hero-art">
+		<header class="floating-header" aria-label="Site header">
+			<a href="/" class="floating-logo-link" aria-label="The Validation Movement home">
+				<img src={tvmLogo} alt="The Validation Movement" class="floating-logo" />
+			</a>
+		</header>
 
-	<section class="hero">
-		<div class="eyebrow">
-			<span></span>
-			CORE BELIEF
+		<div class="hero-art-image-wrap" aria-hidden="true">
+			<img src={heroImage} alt="" class="hero-art-image" />
+
+			<div class="hero-art-overlay"></div>
+			<div class="hero-art-grain"></div>
 		</div>
 
-		<h1 class="hero-heading">
-			BPD is not
-			<span class="hero-emphasis">“too much.”</span>
-		</h1>
+		<div class="hero-art-content">
+			<div class="hero-art-copy">
+				<p class="eyebrow light">
+					<span></span>
+					Core belief
+				</p>
 
-		<div class="hero-divider"></div>
+				<h1 class="hero-art-heading">
+					BPD is not
+					<span>“too much.”</span>
+				</h1>
 
-		<div class="hero-content">
-			<div class="hero-statement">
-				<p>
+				<p class="hero-art-statement">
 					It is often overwhelming emotional pain being communicated in the only language someone
 					has.
 				</p>
-			</div>
 
-			<div class="hero-support">
-				<p>
-					A compassion-centered platform dedicated to reducing stigma surrounding Borderline
-					Personality Disorder through emotionally intelligent design, supportive tools, education,
-					and lived experience.
-				</p>
+				<div class="hero-art-actions">
+					<a href="#for-bpd" class="hero-button primary"> I Have BPD </a>
 
-				<div class="hero-actions">
-					<a href="#for-bpd" class="ghost-button primary"> I Have BPD </a>
-
-					<a href="#understand-bpd" class="ghost-button"> I Want to Understand BPD </a>
+					<a href="#understand-bpd" class="hero-button"> I Want to Understand BPD </a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="belief-strip">
-		<div class="belief-item">
-			<span>Validation is not agreement.</span>
-		</div>
+	<section class="cream-section">
+		<div class="page-shell">
+			<section class="belief-grid" aria-label="Core validation beliefs">
+				{#each beliefs as belief}
+					<article class="belief-card">
+						<p>{belief}</p>
+					</article>
+				{/each}
+			</section>
 
-		<div class="belief-item">
-			<span>Intensity is not manipulation.</span>
-		</div>
-
-		<div class="belief-item">
-			<span>Pain is not attention-seeking.</span>
-		</div>
-	</section>
-
-	<section class="editorial-message">
-		<div class="eyebrow">
-			<span></span>
-			EMOTIONAL REALITY
-		</div>
-
-		<div class="editorial-grid">
-			<h2>People are not asking to be dramatic.</h2>
-
-			<div class="editorial-copy">
-				<p>
-					They are trying to communicate something real, frightening, and overwhelming — often
-					without the regulation, safety, or emotional language they needed growing up.
+			<section class="editorial-message">
+				<p class="eyebrow">
+					<span></span>
+					Emotional reality
 				</p>
 
-				<p>
-					The Validation Movement exists to create understanding before judgment, regulation before
-					shame, and emotional safety before explanation.
-				</p>
-			</div>
-		</div>
-	</section>
+				<div class="editorial-grid">
+					<h2>People are not asking to be dramatic.</h2>
 
-	<section class="principles-grid">
-		<article class="principle-card">
-			<span class="principle-number">01</span>
+					<div class="editorial-copy">
+						<p>
+							They are trying to communicate something real, frightening, and overwhelming — often
+							without the regulation, safety, or emotional language they needed growing up.
+						</p>
 
-			<h3>Believe the intensity.</h3>
-
-			<p>The emotion may seem impossible from the outside. That does not mean it is exaggerated.</p>
-		</article>
-
-		<article class="principle-card">
-			<span class="principle-number">02</span>
-
-			<h3>Reduce shame.</h3>
-
-			<p>
-				Validation begins by making emotional experience understandable instead of treating it like
-				a character flaw.
-			</p>
-		</article>
-
-		<article class="principle-card">
-			<span class="principle-number">03</span>
-
-			<h3>Offer regulation.</h3>
-
-			<p>
-				Support should lower cognitive load and help someone return to safety before asking them to
-				explain themselves.
-			</p>
-		</article>
-	</section>
-
-	<section class="featured-tool">
-		<div class="eyebrow">
-			<span></span>
-			FEATURED TOOL
-		</div>
-
-		<div class="tool-layout">
-			<div class="tool-copy">
-				<h2>Calm Now</h2>
-
-				<p>
-					A focused emotional regulation experience designed for moments of panic, spiraling,
-					overwhelm, rejection sensitivity, or attachment activation.
-				</p>
-
-				<a href="/calm-now" class="ghost-button primary"> Open The Tool </a>
-			</div>
-
-			<div class="tool-preview">
-				<div class="preview-screen">
-					<div class="preview-pulse"></div>
-
-					<p class="preview-text">Self is here.</p>
+						<p>
+							The Validation Movement exists to create understanding before judgment, regulation
+							before shame, and emotional safety before explanation.
+						</p>
+					</div>
 				</div>
-			</div>
+			</section>
+
+			<section class="principles-grid" aria-label="Validation principles">
+				{#each principles as principle}
+					<article class="principle-card">
+						<span class="principle-number">{principle.number}</span>
+
+						<h3>{principle.title}</h3>
+
+						<p>{principle.text}</p>
+					</article>
+				{/each}
+			</section>
+
+			<section class="featured-tool">
+				<p class="eyebrow">
+					<span></span>
+					Featured tool
+				</p>
+
+				<div class="tool-layout">
+					<div class="tool-copy">
+						<h2>Calm Now</h2>
+
+						<p>
+							A focused emotional regulation experience designed for moments of panic, spiraling,
+							overwhelm, rejection sensitivity, or attachment activation.
+						</p>
+
+						<a href="/calm-now" class="ghost-button primary"> Open The Tool </a>
+					</div>
+
+					<div class="tool-preview" aria-hidden="true">
+						<div class="preview-screen">
+							<div class="preview-pulse"></div>
+
+							<p class="preview-text">A softer place to land.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</section>
 </main>
