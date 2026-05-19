@@ -37,6 +37,7 @@
 
 <svelte:head>
 	<title>The Validation Movement</title>
+
 	<meta
 		name="description"
 		content="A compassion-centered platform dedicated to reducing the stigma surrounding Borderline Personality Disorder through emotionally intelligent design, supportive tools, education, and lived experience."
@@ -51,9 +52,23 @@
 
 	<meta property="og:type" content="website" />
 
-	<meta property="og:image" content="/src/lib/assets/seo/og-validation-movement.jpg" />
+	<meta
+		property="og:image"
+		content="https://YOUR-NETLIFY-URL.netlify.app/og-validation-movement.jpg"
+	/>
+
+	<meta property="og:image:width" content="1200" />
+
+	<meta property="og:image:height" content="630" />
+
+	<meta property="og:image:type" content="image/jpeg" />
 
 	<meta property="twitter:card" content="summary_large_image" />
+
+	<meta
+		name="twitter:image"
+		content="https://YOUR-NETLIFY-URL.netlify.app/og-validation-movement.jpg"
+	/>
 </svelte:head>
 
 <main>
