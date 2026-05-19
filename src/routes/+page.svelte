@@ -41,6 +41,19 @@
 		name="description"
 		content="A compassion-centered platform dedicated to reducing the stigma surrounding Borderline Personality Disorder through emotionally intelligent design, supportive tools, education, and lived experience."
 	/>
+
+	<meta property="og:title" content="The Validation Movement" />
+
+	<meta
+		property="og:description"
+		content="A compassion-centered platform dedicated to reducing stigma surrounding Borderline Personality Disorder through emotionally intelligent design, education, and emotional safety."
+	/>
+
+	<meta property="og:type" content="website" />
+
+	<meta property="og:image" content="/src/lib/assets/seo/og-validation-movement.jpg" />
+
+	<meta property="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <main>
