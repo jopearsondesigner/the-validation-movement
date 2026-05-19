@@ -1126,38 +1126,35 @@ main {
 
 @media (max-width: 720px) {
 	.inner-anchor-shell {
-		justify-content: flex-start;
-		padding-top: 72px;
-		padding-bottom: 40px;
+		padding-top: 56px;
+		padding-bottom: 32px;
 	}
 
 	.inner-anchor-copy {
-		margin-bottom: 22px;
+		margin-bottom: 18px;
 	}
 
 	.inner-anchor .eyebrow {
-		margin-bottom: 22px;
+		margin-bottom: 18px;
 	}
 
 	.inner-anchor-heading {
-		font-size: clamp(2.55rem, 11.5vw, 4rem);
-		line-height: 0.94;
+		font-size: clamp(2.35rem, 10.5vw, 3.65rem);
 	}
 
 	.inner-anchor-intro {
-		margin-top: 18px;
-		font-size: 1rem;
-		line-height: 1.45;
+		margin-top: 14px;
+		font-size: 0.98rem;
+		line-height: 1.4;
 	}
 
 	.inner-anchor-card {
-		padding: 34px 28px;
-		gap: 22px;
+		padding: 28px 26px;
+		gap: 18px;
 	}
 
 	.step-text {
-		font-size: clamp(1.85rem, 9vw, 2.45rem);
-		line-height: 0.98;
+		font-size: clamp(1.75rem, 8.5vw, 2.3rem);
 	}
 }
 
