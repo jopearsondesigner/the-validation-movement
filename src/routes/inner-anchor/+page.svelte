@@ -1,3 +1,4 @@
+<!-- src/routes/inner-anchor/+page.svelte -->
 <script lang="ts">
 	import tvmLogo from '$lib/assets/logos/tvm-logo-primary.svg';
 	import lanternGlow from '$lib/assets/graphics/celestial/lantern-glow.webp';
