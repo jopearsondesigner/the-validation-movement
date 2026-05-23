@@ -56,7 +56,7 @@
 
 	<meta
 		property="og:image"
-		content="https://the-validation-movement.netlify.app/og-validation-movement.jpg"
+		content="https://the-validation-movement.netlify.app/og-validation-movement-v2.jpg"
 	/>
 
 	<meta property="og:image:width" content="1200" />
@@ -74,7 +74,7 @@
 
 	<meta
 		name="twitter:image"
-		content="https://the-validation-movement.netlify.app/og-validation-movement.jpg"
+		content="https://the-validation-movement.netlify.app/og-validation-movement-v2.jpg"
 	/>
 </svelte:head>
 
